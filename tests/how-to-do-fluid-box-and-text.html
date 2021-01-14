@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/how-to-do-fluid-box-and-text.css">
+	<title>How to do fluid box with text</title>
+</head>
+
+<body>
+	<header>
+
+
+	</header>
+	<main>
+		<div class="state">
+			<div class="state__text">
+				<p>Как загнать "резиновый текст" одновременно в рамки контейнера при изменении
+					масштаба окна браузера и размера окна - вот
+					задачка на злобу дня.</p>
+				<p>
+					Решение простое. Необходимо выставлять контейнер и шрифт в <span class="green-text">px</span>, а
+					вложенные боксы в процентах к родителю.
+				</p>
+				<p>
+					Пример:
+				</p>
+			</div>
+		</div>
+
+		<div class="box-example">
+			<p>Контейнер 955 px</p>
+			<div class="box-example__item">
+				<p>Собственно текст <br>
+
+
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui enim fugiat vel reprehenderit.
+					Iure
+					culpa
+					iusto repudiandae amet labore eligendi laboriosam quod voluptas quibusdam cumque, corrupti
+					consequatur
+					voluptatum alias vero.
+				</p>
+
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div>
+			Created by me
+		</div>
+		<div>
+			<div>E-mail for contact -</div>
+			<div id="conteinerFooter">
+				<div id="mailConteiner">
+					<a href="mailto:dmkgld@gmail.com"><span id="copyEmail">dmkgld@gmail.com</span></a>
+					<button onclick="copyToClipboard('#copyEmail')"><img src="../img/editcopy_104475.svg"
+							alt=""></button>
+				</div>
+
+
+			</div>
+
+		</div>
+	</footer>
+</body>
+
+</html>

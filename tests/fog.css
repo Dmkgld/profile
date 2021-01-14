@@ -1,0 +1,7 @@
+div {
+	background-image: url("/img/fog-2up.png");
+	background-repeat: repeat;
+	background-size: cover;
+	width: 1000px;
+	height: 800px;
+}

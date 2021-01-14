@@ -1,0 +1,40 @@
+.flip {
+	border: 2px solid pink;
+}
+.flip__body {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	transition: all 0.8s ease 0s;
+	transform-style: preserve-3d;
+}
+
+.flip__front,
+.flip__back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+.flip__front {
+	z-index: 2;
+	transform: rotateY(0eg);
+	background-color: red;
+}
+/* .flip__front p {
+	backface-visibility: hidden;
+} */
+.flip__back {
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+	background-color: green;
+}
+.flip:hover .flip__body {
+	transform: rotateY(-180deg);
+}

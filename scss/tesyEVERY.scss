@@ -1,0 +1,211 @@
+// *Обнуление*
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100vmax;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+.box {
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 85vw;
+	height: 80vh;
+	background-color: rgb(174, 25, 219);
+	border: 1px solid red;
+
+	.box-in {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		// width: 25vw;
+		max-width: 40%;
+		height: 80%;
+		grid-gap: 5%;
+		font-size: 1vw;
+		background-color: yellow;
+
+		.span-in {
+			display: grid;
+			// grid-row: raw;
+			width: 100%;
+			height: 100%;
+			background-color: lawngreen;
+			border: 1px solid red;
+			// img {
+			// 	width: 100%;
+			// 	height: 100%;
+			// 	object-fit: cover;
+			// 	padding-bottom: 15px;
+			// }
+		}
+		.img {
+			// max-width: 8vw;
+			// height: 5vw;
+
+			grid-column: span 2;
+			// grid-row: span 2;
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+
+			/* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+			border: 5px solid rgb(221, 9, 175);
+			figcaption {
+				position: relative;
+				z-index: 1;
+				display: flex;
+				align-items: flex-end;
+			}
+
+			figure {
+				position: relative;
+				top: 0;
+				// left: 0;
+				// bottom: 0;
+				// right: 0;
+				width: 100%;
+				height: 75%;
+				padding-top: 58.75%;
+				z-index: 0;
+				img {
+					position: absolute;
+					object-fit: cover;
+					top: 0;
+					// left: 0;
+					// bottom: 0;
+					// right: 0;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+	.box-in2 {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 25vw;
+		// height: 150px;
+		justify-content: center;
+		// height: 25%;
+		background-color: yellow;
+		border: 1px solid rgb(24, 174, 233);
+		.span-in {
+			// min-width: min-content;
+			// min-height: max-content;
+			max-width: 6vw;
+			height: 25%;
+			background-color: lawngreen;
+			border: 1px solid red;
+		}
+	}
+	.box-in3 {
+		display: inline-block;
+
+		max-width: 25vw;
+		max-height: 150px;
+		justify-content: center;
+		// height: 25%;
+		background-color: yellow;
+		border: 1px solid rgb(24, 174, 233);
+		.span-in {
+			max-width: 6vw;
+
+			height: 100%;
+			background-color: lawngreen;
+			border: 1px solid red;
+		}
+	}
+}
+
+// @function calcFluidSize($f-min, $f-max, $v-min, $v-max) {
+// 	$k: ($f-max - $f-min)/ ($v-max - $v-min);
+// 	$b: $f-min - $k * $v-min;
+
+// 	$b: $b * 1px;
+
+// 	@return calc(#{$k} * 100vw + #{$b});
+// }
+
+// calc(100% - ((1200 / 100vw) * 100%))
+
+// @function calcSize($f-min, $viewport- current, $viewport-max) {
+// 	$k: ($f-max - $f-min)/ ($v-max - $v-min);
+// 	$b: $f-min - $k * $v-min;
+
+// 	$b: $b * 1px;
+
+// 	@return calc(#{$k} * 100vw + #{$b});
+// }

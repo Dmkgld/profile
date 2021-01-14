@@ -1,0 +1,64 @@
+@import "zero";
+
+// function of fluid size
+// f-min - min size of the object
+// f-max - max size of the object
+// v-min - min size of the window
+// v-max - max size of the window
+// example: font-size: calcFluidSize(18, 30, 320, 1920); --> create font with 30 px in window width 1920 px and 18px,
+//		    when window is 320
+
+@function calcFluidSize($f-min, $f-max, $v-min, $v-max) {
+	$k: ($f-max - $f-min)/ ($v-max - $v-min);
+	$b: $f-min - $k * $v-min;
+
+	$b: $b * 1px;
+
+	@return calc(#{$k} * 100vw + #{$b});
+}
+
+@function calcFluidSizeUnits($f-min, $f-max, $v-min, $v-max, $units: px) {
+	$k: ($f-max - $f-min)/ ($v-max - $v-min);
+	$b: $f-min - $k * $v-min;
+
+	$b: $b + $units;
+
+	@return calc(#{$k} * 100vw + #{$b});
+}
+
+body {
+	background-color: rgba(44, 43, 43, 0.5);
+}
+
+.state {
+	margin: 100px auto;
+	width: 900px;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: wheat;
+	padding: 20px;
+	margin: 30px;
+
+	.title {
+		font-size: 18px;
+		color: chocolate;
+	}
+	.data {
+		width: 85%;
+		height: 80px;
+	}
+	.counter {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 20px;
+		button {
+			margin: 5px;
+			padding: 5px;
+			border-radius: 5px;
+		}
+	}
+}

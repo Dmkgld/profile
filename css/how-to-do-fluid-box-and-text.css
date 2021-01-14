@@ -1,0 +1,303 @@
+/*! zeroing ================================================================================ zeroing */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100vmax;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a[href^="tel:"],
+a[href^="mailto:"] {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*! end  ================================================================================ zeroing */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 5vw;
+  font-size: 1.5vw;
+  background-color: #996649;
+}
+
+footer div:nth-child(2) > div:nth-child(1) {
+  text-align: left;
+  width: 20vw;
+  max-width: 20vw;
+  max-height: 2vw;
+}
+
+#conteinerFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#mailConteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: right;
+  width: 20vw;
+  max-height: 2vw;
+  padding: 0.5vw 1vw 0 0;
+}
+
+#mailConteiner a {
+  color: inherit;
+}
+
+footer button,
+footer img {
+  width: 1.5vw;
+  height: 100%;
+  max-height: 1.5vmax;
+  background-color: #996649;
+}
+
+html,
+body {
+  font-family: Triodpostnaja;
+  font-size: 38px;
+  height: 100vh;
+  background-image: url(../img/htdFluidText/Albino_materiali_60.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+html header,
+body header {
+  width: 100%;
+  height: 5%;
+  background-attachment: fixed;
+  background-image: url(../img/htdFluidText/Albino_materiali_60.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 10px;
+}
+
+html main,
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  min-height: 95%;
+  background-image: url(../img/htdFluidText/optimize3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@media (max-width: 755px) {
+  html main,
+  body main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-attachment: initial;
+  }
+}
+
+html main .green-text,
+body main .green-text {
+  color: greenyellow;
+}
+
+html .state,
+body .state {
+  max-width: 1500px;
+  margin: 0 calc(0.12625 * 100vw + -32.4px);
+  border: 3px solid #3fdb10;
+}
+
+html .state__text,
+body .state__text {
+  max-width: 100%;
+  font-size: 1.5vw;
+  padding: 15px 25px;
+  border: 2px solid red;
+  color: #000000;
+  text-align: justify;
+}
+
+.box-example {
+  border: 1px solid #0f0101;
+  border-radius: 15px;
+  background-color: rgba(240, 230, 140, 0.2);
+  max-width: 955px;
+  margin: 0 12%;
+}
+
+.box-example__item {
+  max-width: 100%;
+  height: 100%;
+  border: 1px solid #0f0101;
+  border-radius: 15px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10%;
+  background-color: #996649;
+}
+
+footer div:nth-child(2) > div:nth-child(1) {
+  text-align: left;
+  width: 20vw;
+  max-width: 20vw;
+  max-height: 2vw;
+}
+
+#conteinerFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#mailConteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: right;
+  width: 20vw;
+  max-height: 2vw;
+  padding: 0.5vw 1vw 0 0;
+}
+
+#mailConteiner a {
+  color: inherit;
+}
+
+footer button,
+footer img {
+  width: 1.5vw;
+  height: 100%;
+  max-height: 1.5vmax;
+  background-color: #996649;
+}
+
+@font-face {
+  font-family: "Triodpostnaja";
+  src: url("../fonts/TriodPostnaja-Font/triodpostnaja.eot");
+  src: local("Triodpostnaja"), url("../fonts/TriodPostnaja-Font/triodpostnaja.woff") format("woff"), url("../fonts/TriodPostnaja-Font/triodpostnaja.ttf") format("truetype"), url("../fonts/TriodPostnaja-Font/triodpostnaja.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
