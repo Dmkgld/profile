@@ -1,0 +1,22 @@
+button {
+	font: 15px bold;
+	box-shadow: 2px 2px 5px 1px rgb(73, 70, 70);
+	margin: 5px;
+	padding: 5px;
+	border-radius: 6px;
+	width: 100px;
+	background-color: #ff9c9c;
+	border-right: 2px solid #c57878;
+	border-bottom: 2px solid #c57878;
+}
+button:hover {
+	background-color: #e9ae0a;
+	transition: 100ms linear;
+	border-right: 2px solid #bb8c0b;
+	border-bottom: 2px solid #bb8c0b;
+}
+button:active {
+	background-color: #e9ae0a;
+	box-shadow: none;
+	border: none;
+}

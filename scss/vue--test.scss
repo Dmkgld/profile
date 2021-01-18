@@ -28,16 +28,19 @@
 
 body {
 	background-color: rgba(44, 43, 43, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .state {
 	margin: 100px auto;
-	width: 900px;
-	height: 350px;
+	width: 600px;
+	height: 250px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	background-color: wheat;
 	padding: 20px;
 	margin: 30px;
@@ -47,18 +50,43 @@ body {
 		color: chocolate;
 	}
 	.data {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 85%;
 		height: 80px;
+		font-size: 22px;
+		color: rgb(110, 184, 0);
+		font-weight: bold;
+		font-family: "Times New Roman", Times, serif;
 	}
 	.counter-button {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 20px;
+		width: 200px;
+
 		button {
+			font: 15px bold;
+			box-shadow: 2px 2px 5px 1px rgb(73, 70, 70);
 			margin: 5px;
 			padding: 5px;
-			border-radius: 5px;
+			border-radius: 6px;
+			width: 100px;
+			background-color: #ff9c9c;
+			border-right: 2px solid #c57878;
+			border-bottom: 2px solid #c57878;
+		}
+		button:hover {
+			background-color: #e9ae0a;
+			transition: 100ms linear;
+			border-right: 2px solid #bb8c0b;
+			border-bottom: 2px solid #bb8c0b;
+		}
+		button:active {
+			background-color: rgb(233, 174, 10);
+			box-shadow: none;
+			border: none;
 		}
 	}
 }
