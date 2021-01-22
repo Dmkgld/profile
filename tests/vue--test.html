@@ -9,16 +9,24 @@
 	<title>VUE TEST</title>
 </head>
 
-<body>
+<body id="vue-app">
 
-	<div id="hello-vue" class="demo">
+	<div class="demo">
 		{{ message }}
 	</div>
 
 
-	<div class="state" id="count">
+	<div class="state">
 		<div class="title">Counter for vue test</div>
 		<div class="data">Counter: {{ counter }}</div>
+		<div class="counter-button">
+			<button>Добавить</button>
+			<button>Отнять</button>
+		</div>
+	</div>
+	<div class="state">
+		<div class="title">TEST2</div>
+		<div class="data"><input type="text"></div>
 		<div class="counter-button">
 			<button>Добавить</button>
 			<button>Отнять</button>

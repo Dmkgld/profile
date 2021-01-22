@@ -1,18 +1,11 @@
-const HelloVueApp = {
+const VueApp = {
 	data() {
 		return {
-			message: 'Hello Vue!!',
-
-		}
-	}
-}
-const Count = {
-	data() {
-		return {
-			counter: 0
+			message: 'Hello Vueeeeeeee!!',
+			counter: 1012
 		}
 	}
 }
 
-Vue.createApp(HelloVueApp).mount('#hello-vue')
-Vue.createApp(Count).mount('#count')
+
+Vue.createApp(VueApp).mount('#vue-app')

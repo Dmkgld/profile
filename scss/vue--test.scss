@@ -6,7 +6,7 @@
 // v-min - min size of the window
 // v-max - max size of the window
 // example: font-size: calcFluidSize(18, 30, 320, 1920); --> create font with 30 px in window width 1920 px and 18px,
-//		    when window is 320
+//		    when the window is 320
 
 @function calcFluidSize($f-min, $f-max, $v-min, $v-max) {
 	$k: ($f-max - $f-min)/ ($v-max - $v-min);
@@ -25,6 +25,7 @@
 
 	@return calc(#{$k} * 100vw + #{$b});
 }
+// =========================
 
 body {
 	background-color: rgba(44, 43, 43, 0.5);
@@ -32,7 +33,10 @@ body {
 	justify-content: center;
 	align-items: flex-start;
 }
-
+.demo {
+	margin-top: 200px;
+	margin-left: 20px;
+}
 .state {
 	margin: 100px auto;
 	width: 600px;
