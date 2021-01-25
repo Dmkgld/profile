@@ -9,30 +9,32 @@
 	<title>VUE TEST</title>
 </head>
 
-<body id="vue-app">
-
-	<div class="demo">
-		{{ message }}
-	</div>
+<body>
+	<div id="vue-app">
 
 
-	<div class="state">
-		<div class="title">Counter for vue test</div>
-		<div class="data">Counter: {{ counter }}</div>
-		<div class="counter-button">
-			<button>Добавить</button>
-			<button>Отнять</button>
+		<div class="demo">
+			{{ message }}
+		</div>
+
+
+		<div class="state">
+			<div class="title">Counter for vue test</div>
+			<div class="data">Counter: {{ counter }}</div>
+			<div class="counter-button">
+				<button>Добавить</button>
+				<button>Отнять</button>
+			</div>
+		</div>
+		<div class="state">
+			<div class="title">TEST2</div>
+			<div class="data"><input type="text"></div>
+			<div class="counter-button">
+				<button>Добавить</button>
+				<button>Отнять</button>
+			</div>
 		</div>
 	</div>
-	<div class="state">
-		<div class="title">TEST2</div>
-		<div class="data"><input type="text"></div>
-		<div class="counter-button">
-			<button>Добавить</button>
-			<button>Отнять</button>
-		</div>
-	</div>
-
 	<!-- SCRIPTS -->
 	<script src="../js/vue-test.js"></script>
 </body>

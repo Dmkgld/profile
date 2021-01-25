@@ -27,11 +27,13 @@
 }
 // =========================
 
-body {
+#vue-app {
 	background-color: rgba(44, 43, 43, 0.5);
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
+	width: 100%;
+	min-height: 100%;
 }
 .demo {
 	margin-top: 200px;
